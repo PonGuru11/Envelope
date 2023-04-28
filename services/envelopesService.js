@@ -2,8 +2,8 @@ const axios = require('axios');
 const EnvelopeDAO = require('../dao/envelopeDAO');
 const fs = require('fs');
 
-exports.createEnvelope = async (filePath, email, name) => {
-  const documentBase64 = fs.readFileSync(filePath, 'base64');
+exports.createEnvelope = async (documentUrl, email, name) => {
+  const documentBase64 = fs.readFileSync(documentUrl, 'base64');
 
   const payload = {
     documents: [
