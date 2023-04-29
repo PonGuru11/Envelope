@@ -19,4 +19,4 @@ app.use('/envelopes', envelopesRoutes);
 const PORT = process.env.PORT || 2000;
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-app.get("/", (req,res) => res.send ("Welcome to Docu sign Admin API"));
+app.get("/", (req,res) => res.send ("Welcome to Docu sign sending Envelope using S3 bucket url"));
