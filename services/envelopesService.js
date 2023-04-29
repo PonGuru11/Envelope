@@ -10,8 +10,8 @@ exports.createEnvelope = async (documentUrl, email, name) => {
       {
         documentBase64,
         documentId: "1",
-        fileExtension: 'docx',
-        name
+        fileExtension: 'docx' || 'pdf,
+        name : "Elon.doc"
       }
     ],
     emailSubject: 'Sign the Document',
